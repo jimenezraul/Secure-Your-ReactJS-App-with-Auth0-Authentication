@@ -1,6 +1,6 @@
 # Secure Your ReactJS App with Auth0 Authentication
 
-![Secure Your ReactJS App with Auth0 Authentication](/react-auth0.jpg)
+![Secure Your ReactJS App with Auth0 Authentication](/React-auth0-min.jpg)
 
 This is the code for the blog post [Secure Your ReactJS App with Auth0 Authentication](https://raulwebdev.com/secure-your-reactjs-app-with-auth0-authentication/). In this blog post, I show you how to secure your ReactJS app with Auth0 authentication. Auth0 is a flexible, drop-in solution to add authentication and authorization services to your applications. Auth0 provides a universal authentication and authorization platform for web, mobile, and legacy applications. It is a cloud-based service that provides a set of unified APIs and tools that instantly enables single sign-on and user management for all of your applications.
 
