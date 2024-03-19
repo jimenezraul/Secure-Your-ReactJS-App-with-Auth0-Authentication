@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Secure Your ReactJS App with Auth0 Authentication
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Clone the repository
 
-## Available Scripts
+by https
+```bash
+git clone https://github.com/jimenezraul/Secure-Your-ReactJS-App-with-Auth0-Authentication.git
+```
+by ssh
+```bash
+git clone git@github.com:jimenezraul/Secure-Your-ReactJS-App-with-Auth0-Authentication.git
+```
+or download the zip file.
 
-In the project directory, you can run:
+## Install the dependencies
 
-### `npm start`
+```bash
+cd Secure-Your-ReactJS-App-with-Auth0-Authentication
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Create an Auth0 Application
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Go to the [Auth0 Dashboard](https://manage.auth0.com/dashboard) and click on the "Create Application" button.
+2. Name your new app and select "Single Page Web Applications".
+3. Click on the "Create" button.
+4. Go to the "Settings" tab and add `http://localhost:3000` to the "Allowed Callback URLs", "Allowed Web Origins", and "Allowed Logout URLs" fields.
+5. Click on the "Save Changes" button.
+6. Go to the "Quick Start" tab and select "React" and get the domain and client ID.
 
-### `npm test`
+## Edit auth_config.js File
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Go to the `src` folder and edit file called `auth_config.js`. Replace the `domain` and `clientId` with the ones you got from the Auth0 Dashboard.
 
-### `npm run build`
+## Run the Application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Author
+Raul Jimenez
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Blog Post
+[Secure Your ReactJS App with Auth0 Authentication](https://raulwebdev.com/secure-your-reactjs-app-with-auth0-authentication/)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
